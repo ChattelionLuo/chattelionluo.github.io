@@ -85,9 +85,9 @@ author:
   bio              : "Ph.D. student at AMA, PolyU."
   location         : "Hong Kong"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           :
   googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            : "chattelionluo@connect.polyu.hk"
+  email            : "chattelion.luo@connect.polyu.hk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
