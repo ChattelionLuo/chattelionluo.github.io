@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "HK"
-title                    : "Yuanhang Luo / Site Title"
+title                    : "Yuanhang Luo"
 title_separator          : "-"
 name                     : &name "Yuanhang Luo"
 description              : &description "personal description"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Yuanhang Luo"
   avatar           : "profile.png"
-  bio              : "I am a fresh Ph.D. student in the Department of Applied Mathematics at The Hong Kong Polytechnic University."
+  bio              : "Ph.D. student in the Department of Applied Mathematics at The Hong Kong Polytechnic University."
   location         : "Hong Kong"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
