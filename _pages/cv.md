@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* B.Sc. (Honours) in Mathematics & Statistics, Hong Kong Baptist Univerity, 2023
+* B.Sc. (Hons.) in Mathematics & Statistics, Hong Kong Baptist Univerity, 2023
 * Ph.D. in Mathematics, The Hong Kong Polythechnic University, 2027 (expected)
 
 Work experience
@@ -28,25 +28,3 @@ Skills
 * R
 * Python
 * LateX
-
-#Publications
-#======
-#  <ul>{% for post in site.publications %}
-#    {% include archive-single-cv.html %}
-#  {% endfor %}</ul>
-  
-#Talks
-#======
-#  <ul>{% for post in site.talks %}
-#    {% include archive-single-talk-cv.html %}
-#  {% endfor %}</ul>
-  
-#Teaching
-#======
-#  <ul>{% for post in site.teaching %}
-#    {% include archive-single-cv.html %}
-#  {% endfor %}</ul>
-  
-#Service and leadership
-#======
-#* Currently signed in to 43 different slack teams
