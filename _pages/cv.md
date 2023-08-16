@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+#title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * B.Sc. (Hons.) in Mathematics & Statistics, Hong Kong Baptist Univerity, 2023
-* Ph.D. in Mathematics, The Hong Kong Polythechnic University, 2027 (expected)
+* Ph.D. in Mathematics, The Hong Kong Polytechnic University, 2027 (expected)
 
 Work experience
 ======
