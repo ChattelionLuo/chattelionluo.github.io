@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Yuanhang Luo"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "I am a fresh Ph.D. student in the Department of Applied Mathematics at The Hong Kong Polytechnic University."
+  location         : "Hong Kong"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  email            : "chattelionluo@connect.polyu.hk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "ChattelionLuo"
   google_plus      :
   keybase          :
   instagram        : "lyh4035/"
