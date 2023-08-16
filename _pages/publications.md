@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Publications"
+title: "I am a 菜狗, so no publication."
 permalink: /publications/
 author_profile: true
 ---
