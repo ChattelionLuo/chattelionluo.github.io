@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "A data-driven personal website"
+title: "Chattelion Yuanhang Luo"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
