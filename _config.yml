@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "HK"
-title                    : "Yuanhang Luo"
+title                    : "Personal page"
 title_separator          : "-"
 name                     : &name "Yuanhang Luo"
-description              : &description "personal description"
+description              : "Under construction"
 url                      : https://chattelionluo.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ChattelionLuo/chattelionluo.github.io"
