@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "HK"
-title                    : "Personal page"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Yuanhang Luo"
 description              : "Under construction"
