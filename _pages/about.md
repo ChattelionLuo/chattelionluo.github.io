@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Chattelion Yuanhang Luo"
+title: "About"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
