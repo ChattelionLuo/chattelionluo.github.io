@@ -5,7 +5,39 @@ title: "Blog posts"
 author_profile: true
 header:
 ---
+<script src="mathcell.js"></script>
 
+<script src="https://cdn.jsdelivr.net/gh/mathjax/MathJax@2.7.5/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<p>Taubin&rsquo;s heart surface generated using marching cubes. The amount of data is deliberately reduced to allow rendering on mobile devices. The surface can easily be smoothed by increasing the number of points sampled in the <code>isosurface</code> function.</p>
+
+<div class="mathcell" style="height: 4.5in">
+<script>
+
+var parent = document.currentScript.parentNode;
+
+var id = generateId();
+parent.id = id;
+
+MathCell( id, [] );
+
+parent.update = function( id ) {
+
+  var s = isosurface( (x,y,z) => ( x**2 + 9/4*y**2 + z**2 - 1 )**3 - x**2*z**3 - 9/80*y**2*z**3,
+                      [-1.5,1.5,80], [-1.5,1.5,80], [-1.5,1.5,80], { color: 'red' } );
+
+  var data = [ s ];
+
+  var config = { type: 'threejs', frame: false, viewpoint: [0,1,0] };
+
+  evaluate( id, data, config );
+
+}
+
+parent.update( id );
+
+</script>
+</div>
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
