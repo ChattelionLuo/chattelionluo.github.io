@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>MathCell - Inputs</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style> td { text-align: center } </style>
+</head>
+
+<body>
+
+<p>There are seven kinds of input:</p>
+
+<table style="width: 4in; margin-left: 1.5in"><tr><td>
+<code>slider</code><br>
+<code>buttons</code><br>
+<code>number</code></td><td>
+<code>checkbox</code><br>
+<code>text</code></td><td>
+<code>iterator</code><br>
+<code>action</code><br>
+</td></tr></table>
+
+<p>The array of inputs in the <code>MathCell()</code> command should contain a dictionary for each input desired, with <code>type</code> set equal to one of these string values, followed by a comma-separated list of optional attributes. Entries in the array can also be arrays of inputs, following the logic of matrices, to allow for arbitrary arrangements.</p>
+
+<p>All inputs other than <code>action</code> have two additional string options: a <code>name</code> that is used to identify the input in subsequent code, and a <code>label</code> that appears next to the input. The label can be any valid HTML. Single letter labels are italicized by default.</p>
+
+<p>All variables are assigned in code via the helper function</p>
+
+<pre>
+var x = getVariable( id, 'x' );
+</pre>
+
+<p>where <code>'x'</code> is the <code>name</code> of the variable.</p>
+
+<br><p>A <code>slider</code> input has four numeric options with default values</p>
+
+<table style="width: 2in; margin-left: 2in"><tr><td>
+  <code>min</code></td><td>0
+</td></tr><tr><td>
+  <code>max</code></td><td>1<br/>
+</td></tr><tr><td>
+  <code>step</code></td><td>.01<br/>
+</td></tr><tr><td>
+  <code>default</code></td><td><code>min</code>
+</td></tr></table>
+
+<br/><p>A <code>buttons</code> input has four additional options: an array of numbers or strings, an optional array of string labels, a value in the first array and a CSS string with default values</p>
+
+<table style="width: 2.5in; margin-left: 2in"><tr><td>
+  <code>values</code></td><td>[1,2,3]
+</td></tr><tr><td>
+  <code>labels</code></td><td><code>values</code>
+</td></tr><tr><td>
+  <code>default</code></td><td><code>values[0]</code>
+</td></tr><tr><td>
+  <code>width</code></td><td>empty
+</td></tr></table>
+
+<br><p>A <code>number</code> input has three numeric options with default values</p>
+
+<table style="width: 2in; margin-left: 2in"><tr><td>
+  <code>min</code></td><td>0
+</td></tr><tr><td>
+  <code>max</code></td><td>1<br/>
+</td></tr><tr><td>
+  <code>default</code></td><td><code>min</code>
+</td></tr></table>
+
+<p>The minimum and maximum values of slider and number inputs can be set via the helper function</p>
+
+<pre>
+setLimit( id, name, end, value );
+</pre>
+
+<p>where <code>end</code> is either <code>'min'</code> or <code>'max'</code>. This can be used to avoid invalid numerical input.</p>
+
+<br><p>A <code>checkbox</code> input has a single additional option <code>default</code>, which can be set to either <code>'checked'</code> or <code>true</code> to have the box initially checked.</p>
+
+<p>A <code>text</code> input has two additional options: an initial string and a CSS string with the default values</p>
+
+<table style="width: 2.5in; margin-left: 2in"><tr><td>
+  <code>default</code></td><td>empty
+</td></tr><tr><td>
+  <code>width</code></td><td>automatic
+</td></tr></table>
+
+<p>An <code>iterator</code> input allows one to step forward or backward numerically, and has two additional options width default values</p>
+
+<table style="width: 2.5in; margin-left: 1.75in"><tr><td>
+  <code>default</code></td><td>0
+</td></tr><tr><td>
+  <code>reversible</code></td><td>false
+</td></tr></table>
+
+<br><p>An <code>action</code> input is a button that triggers a behavior. Its <code>label</code> is any valid HTML but is not italicized by default. The type of action is set by a <code>subtype</code> option and a corresponding <code>script</code> string. Currently there is one such <code>subtype</code>:</p>
+
+<table style="width: 4in; margin-left: 1.5in"><tr><td style="width: 1.5in; vertical-align: top">
+<code>updateParent</code></td><td style="text-align: left">
+process <code>script</code> to update an attribute stored on the current cell
+</td></tr></table>
+
+<p>More actions are coming.</p>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>MathCell - Introduction</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style></style>
+</head>
+
+<body>
+
+<script src="../build/mathcell.js"></script>
+
+<p style="text-align: center; line-height: 2"><span style="font-size: 20pt">MathCell</span><br/>
+a simple straightforward way to include interactive mathematics in a web page</p>
+
+<div class="mathcell" style="height: 4in">
+<script>
+
+var parent = document.scripts[ document.scripts.length - 1 ].parentNode;
+
+var id = generateId();
+parent.id = id;
+
+MathCell( id, [ { type: 'slider', min: 0, max: 2*Math.PI,
+                                name: 'phase', label: 'phase' } ] );
+
+parent.update = function( id ) {
+
+  var phase = +document.getElementById( id + 'phase' ).value;
+
+  var p1 = plot( x => Math.sin(x), [0, 2*Math.PI], { color: 'rgb(0,255,127)' } );
+  var p2 = plot( x => Math.cos(x-phase), [0, 2*Math.PI], { color: 'purple' } );
+
+  var data = [ p1, p2 ];
+
+  var config = { type: 'svg' };
+
+  evaluate( id, data, config );
+
+}
+
+parent.update( id );
+
+</script>
+</div>
+
+</body>
+</html>

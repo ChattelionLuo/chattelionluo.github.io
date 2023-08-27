@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>MathCell - Examples</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+        a { width: 2in; height: 2in; display: inline-block;
+            padding: .1in; color: black !important }
+        a div { width: 2in; height: 2in; position: absolute; z-index: 1 }
+        a iframe { width: 6.5in; height: 6.5in;
+                   transform: scale( calc(2/6.5) );
+                   transform-origin: top left; z-index: -1 }
+</style>
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+
+<script>
+
+var observer = new IntersectionObserver( entries => {
+
+  entries.forEach( entry => {
+
+    if ( entry.intersectionRatio > 0 ) entry.target.srcdoc = entry.target.source;
+    else entry.target.srcdoc = '';
+
+  } );
+
+} );
+
+
+var xhr = new XMLHttpRequest();
+
+// GitHub API not consistenly loaded by Google...
+xhr.open( 'GET', 'https://paulmasson.github.io/sitemap.txt', true );
+
+xhr.onload = function() {
+
+  var files = xhr.response.split( '\n' ).filter( e => e.includes( '/docs/examples/' ) );
+  var xhrs = [];
+
+  for ( var i = 0 ; i < files.length ; i++ ) {
+
+    var div = document.createElement( 'div' );
+    div.id = 'example' + i;
+    div.style.display = 'inline-block';
+    document.body.append( div );
+
+    xhrs[i] = new XMLHttpRequest();
+    xhrs[i].fileName = files[i];
+    xhrs[i].responseType = 'document';
+    xhrs[i].id = div.id;
+
+    xhrs[i].open( 'GET', xhrs[i].fileName, true );
+
+    xhrs[i].onload = function() {
+
+      var a = document.createElement( 'a' );
+      a.href = this.fileName;
+      a.title = this.response.title;
+
+      var div = document.createElement( 'div' );
+      a.append( div );
+
+      var newDocument = document.implementation.createHTMLDocument();
+
+      for ( var i = this.response.scripts.length - 1 ; i >= 0 ; i-- ) {
+        var s = this.response.scripts[i];
+        if ( s.innerHTML === '' ) {
+          s.src = s.src; // forces absolute URL
+          newDocument.children[0].children[1].append( s ); // mutates collection
+        }
+      }
+
+      var cell = this.response.getElementsByClassName( 'mathcell' )[0];
+      newDocument.children[0].children[1].append( cell );
+
+      var iframe = document.createElement( 'iframe' );
+      iframe.source = newDocument.documentElement.outerHTML;
+      iframe.scrolling = 'no';
+      a.append( iframe );
+
+      document.getElementById( this.id ).append( a );
+
+      observer.observe( iframe );
+
+    }
+
+    xhrs[i].send();
+
+  }
+
+}
+
+xhr.send();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Superellipsoid</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<style></style>
+</head>
+
+<body>
+
+<script src="../../build/mathcell.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/mathjax/MathJax@2.7.5/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<p>A three-dimensional superellipsoid with corner sharpness controlled by a slider. The width and height of the MathCell have been increased to show the graphic more clearly. The isosurface is generated using marching cubes.</p>
+
+<div class="mathcell" style="width: 6in; height: 6in">
+<script>
+
+var parent = document.currentScript.parentNode;
+
+var id = generateId();
+parent.id = id;
+
+MathCell( id, [ { type: 'slider', min: 1, max: 5, default: 2.5,
+                                  name: 'n', label: 'n' } ] );
+
+parent.update = function( id ) {
+
+  var n = getVariable( id, 'n' );
+
+  function f( x, y, z ) {
+
+    return Math.abs(x)**n + Math.abs(y)**n + Math.abs(z)**n - 1;
+
+  }
+
+  var s = isosurface( f, [-1,1], [-1,1], [-1,1], { material: 'normal' } );
+
+  var data = [ s ];
+
+  var config = { type: 'threejs', frame: false };
+
+  evaluate( id, data, config );
+
+}
+
+parent.update( id );
+
+</script>
+</div>
+
+<p>This superellipsoid is defined by the equation</p>
+
+\[ |x|^n + |y|^n + |z|^n = 1 \]
+
+<p>Complete code for this example:</p>
+
+<pre id="codeDisplay"></pre>
+
+<script> getCompleteCode(); </script>
+
+<p><a href="../examples.html">Examples Page</a></p>
+
+</body>
+</html>

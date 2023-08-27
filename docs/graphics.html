@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>MathCell - Graphics</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style></style>
+</head>
+
+<body>
+
+<p>Options for graphics objects are specified as JavaScript dictionaries. Unless stated otherwise, common default options are</p>
+
+<table style="margin-left: 1in"><tr><td style="width: 1in">
+  <code>color</code></td><td>rgb(0,127,255) - rich azure blue
+</td></tr><tr><td>
+  <code>opacity</code></td><td>1
+</td></tr></table>
+
+<p>Colors are specified using standard HTML color code strings. Predefined <a href="colormaps.html">colormaps</a> are also available.</p>
+
+<p>Objects composed of lines have an additional option of <code>thickness</code> that defaults to 1.5 in two dimensions. Due to limitations of WebGL, in three dimensions it renders as 1 on most platforms regardless of the setting.</p>
+
+<p>Additional object-specific options are listed below each.</p>
+
+<br/><p><b>arrow( begin, end, options )</b> &mdash; two- or three-dimensional arrow from beginning to end</p>
+
+<table style="margin-left: 1in"><tr><td style="width: 1in">
+  <code>size</code></td><td>1
+</td></tr></table>
+
+<p><b>box( width, depth, height, options )</b> &mdash; box of specified dimensions centered at the origin</p>
+
+<table style="margin-left: 1in"><tr><td style="width: 1in">
+  <code>axis</code></td><td>arbitrary vector direction, default [0,0,1]
+</td></tr><tr><td>
+  <code>center</code></td><td>vector position, default [0,0,0]
+</td></tr></table>
+
+<p><b>cone( radius, height, options )</b> &mdash; cone of specified dimensions</p>
+
+<table style="margin-left: 1in"><tr><td style="width: 1in">
+  <code>axis</code></td><td>arbitrary vector direction, default [0,0,1]
+</td></tr><tr><td>
+  <code>center</code></td><td>vector position, default [0,0,0]
+</td></tr><tr><td>
+  <code>steps</code></td><td>integer determining surface smoothness, default 20
+</td></tr></table>
+
+<p><b>cylinder( radius, height, options )</b> &mdash; cylinder of specified dimensions</p>
+
+<table style="margin-left: 1in"><tr><td style="width: 1in">
+  <code>axis</code></td><td>arbitrary vector direction, default [0,0,1]
+</td></tr><tr><td>
+  <code>center</code></td><td>vector position, default [0,0,0]
+</td></tr><tr><td>
+  <code>openEnded</code></td><td>Boolean to draw cylinder ends, default <code>true</code>
+</td></tr><tr><td>
+  <code>steps</code></td><td>integer determining surface smoothness, default 20
+</td></tr></table>
+
+<p><b>ellipsoid( <i>a</i>, <i>b</i>, <i>c</i>, options )</b> &mdash; ellipsoid of specified parameters</p>
+
+<table style="margin-left: 1in"><tr><td style="width: 1in">
+  <code>axis</code></td><td>arbitrary vector direction, default [0,0,1]
+</td></tr><tr><td>
+  <code>center</code></td><td>vector position, default [0,0,0]
+</td></tr><tr><td>
+  <code>steps</code></td><td>integer determining surface smoothness, default 20
+</td></tr></table>
+
+<p><b>line( points, options )</b> &mdash; two- or three-dimensional line joining an array of points</p>
+
+<table style="margin-left: 1in"><tr><td style="width: 1in">
+  <code>endcaps</code></td><td>Boolean to include spheres to smooth joints, default <code>false</code>
+</td></tr><tr><td>
+  <code>radius</code></td><td>float for drawing the line as an extended cylinder
+</td></tr></table>
+
+<p><b>point( point, options )</b> &mdash; two- or three-dimensional point</p>
+
+<table style="margin-left: 1in"><tr><td style="width: 1in">
+  <code>size</code></td><td>1
+</td></tr></table>
+
+<p><b>sphere( radius, options )</b> &mdash; sphere of specified radius</p>
+
+<table style="margin-left: 1in"><tr><td style="width: 1in">
+  <code>center</code></td><td>vector position, default [0,0,0]
+</td></tr><tr><td>
+  <code>steps</code></td><td>integer determining surface smoothness, default 20
+</td></tr></table>
+
+<p><b>text( string, point, options )</b> &mdash; string of text at the two- or three-dimensional point</p>
+
+<table style="margin-left: 1in"><tr><td style="width: 1in">
+  <code>color</code></td><td>black
+</td></tr><tr><td>
+  <code>fontSize</code></td><td>14
+</td></tr></table>
+
+</body>
+</html>

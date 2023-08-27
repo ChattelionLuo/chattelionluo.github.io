@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Bessel Functions</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<style></style>
+</head>
+
+<body>
+
+<script src="../../build/mathcell.js"></script>
+<script src="../../../math/build/math.js"></script>
+
+<p>Bessel functions of the first kind or second kind for both positive (blue) and negative (red) real order <i>n</i>:</p>
+
+<div class="mathcell" style="height: 5.5in">
+<script>
+
+var parent = document.currentScript.parentNode;
+
+var id = generateId();
+parent.id = id;
+
+MathCell( id, [ { type: 'buttons', values: [ 'first', 'second' ],
+                                   labels: [ 'First Kind', 'Second Kind' ],
+                                   name: 'kind', width: '1.5in' },
+                { type: 'slider', max: 5, default: .5,
+                                  name: 'n', label: 'n' },
+                { type: 'checkbox', name: 'derivatives', label: 'Show derivatives:' } ] );
+
+parent.update = function( id ) {
+
+  var kind = getVariable( id, 'kind' );
+  var n = getVariable( id, 'n' );
+  var derivatives = getVariable( id, 'derivatives' );
+
+  var data;
+
+  if ( derivatives )
+
+    data = kind === 'first'
+           ? [ plot( x => diff( x => besselJ(n,x), x ), [.01,15] ),
+               plot( x => diff( x => besselJ(-n,x), x ), [.01,15], { color: 'red' } ) ]
+           : [ plot( x => diff( x => besselY(n,x), x ), [.01,15] ),
+               plot( x => diff( x => besselY(-n,x), x ), [.01,15], { color: 'red' } ) ];
+
+  else
+
+    data = kind === 'first'
+           ? [ plot( x => besselJ(n,x), [.01,15] ),
+               plot( x => besselJ(-n,x), [.01,15], { color: 'red' } ) ]
+           : [ plot( x => besselY(n,x), [.01,15] ),
+               plot( x => besselY(-n,x), [.01,15], { color: 'red' } ) ];
+
+  var config = { type: 'svg', yMin: -.75, yMax: 1.1 };
+
+  evaluate( id, data, config );
+
+}
+
+parent.update( id );
+
+</script>
+</div>
+
+<p>This allows one to see explicitly that the two functions are linearly dependent for integer order, either coinciding for even order or being mirror images for odd order. It also allows one to see the relative location of the zeros of the two functions.</p>
+
+<p>This example requires the higher-level mathematics of <a href="https://github.com/paulmasson/math" target="_blank">Math</a>.</p>
+
+<p>Complete code for this example:</p>
+
+<pre id="codeDisplay"></pre>
+
+<script> getCompleteCode(); </script>
+
+<p><a href="../examples.html">Examples Page</a></p>
+
+</body>
+</html>

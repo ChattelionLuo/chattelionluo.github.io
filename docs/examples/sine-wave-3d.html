@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Sine Wave 3D</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<style></style>
+</head>
+
+<body>
+
+<script src="../../build/mathcell.js"></script>
+
+<p>A three-dimensional sine wave with frequency controlled by a slider. The width and height of the MathCell have been increased to show the graphic more clearly.</p>
+
+<div class="mathcell" style="width: 6in; height: 6in">
+<script>
+
+var parent = document.currentScript.parentNode;
+
+var id = generateId();
+parent.id = id;
+
+MathCell( id, [ { type: 'slider', min: 1, max: 5, default: 2.5,
+                                  name: 'omega', label: '&omega;' } ] );
+
+parent.update = function( id ) {
+
+  var omega = getVariable( id, 'omega' );
+
+  function z(x,y) { return [ x, y, Math.sin( omega * x * y ) ]; }
+
+  var s = parametric( z, [-1.5,1.5,100], [-1.5,1.5,100],
+                         { colormap: (x,y) => colorFromHue( ( 1 - Math.sin(x*y) ) / 2 ) } );
+
+  var data = [ s ];
+
+  var config = { type: 'threejs' };
+
+  evaluate( id, data, config );
+
+}
+
+parent.update( id );
+
+</script>
+</div>
+
+<p>Complete code for this example:</p>
+
+<pre id="codeDisplay"></pre>
+
+<script> getCompleteCode(); </script>
+
+<p><a href="../examples.html">Examples Page</a></p>
+
+</body>
+</html>

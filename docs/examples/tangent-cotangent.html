@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Tangent and Cotangent</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<style></style>
+</head>
+
+<body>
+
+<script src="../../build/mathcell.js"></script>
+
+<p>A tangent and its cotangent with frequency controlled by a slider. Minimum and maximum vertical values are set manually to improve the appearance of the plot.</p>
+
+<div class="mathcell" style="height: 4.5in">
+<script>
+
+var parent = document.currentScript.parentNode;
+
+var id = generateId();
+parent.id = id;
+
+MathCell( id, [ { type: 'slider', min: 1, max: 5, default: 2.5,
+                                  name: 'omega', label: '&omega;' } ] );
+
+parent.update = function( id ) {
+
+  var omega = getVariable( id, 'omega' );
+
+  var p1 = plot( x => Math.tan( omega * x ), [-Math.PI, Math.PI], { color: 'rgb(0,255,0)' } );
+  var p2 = plot( x => 1/Math.tan( omega * x ), [-Math.PI, Math.PI], { color: 'rgb(255,0,255)' } );
+
+  var data = [ p1, p2 ];
+
+  var config = { type: 'svg', yMin: -5, yMax: 5 };
+
+  evaluate( id, data, config );
+
+}
+
+parent.update( id );
+
+</script>
+</div>
+
+<p>Complete code for this example:</p>
+
+<pre id="codeDisplay"></pre>
+
+<script> getCompleteCode(); </script>
+
+<p><a href="../examples.html">Examples Page</a></p>
+
+</body>
+</html>

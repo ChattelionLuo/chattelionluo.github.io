@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Sine Waves</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<style></style>
+</head>
+
+<body>
+
+<script src="../../build/mathcell.js"></script>
+
+<p>Two sine waves, alone or combined. The frequency of one is controlled by buttons, the other by a slider. The checkbox determines whether the two waves are added together before display.</p>
+
+<div class="mathcell" style="height: 4.5in">
+<script>
+
+var parent = document.currentScript.parentNode;
+
+var id = generateId();
+parent.id = id;
+
+MathCell( id, [ { type: 'buttons', values: [1,2,3,4,5], name: 'omega1',
+                                    label: '&omega;<sub>1</sub>' },
+                { type: 'slider', min:1, max: 5, default: 2.5, name: 'omega2',
+                                    label: '&omega;<sub>2</sub>' },
+                { type: 'checkbox', name: 'combine',
+                                    label: 'Combine the two plots?' } ] );
+
+parent.update = function( id ) {
+
+  var omega1 = getVariable( id, 'omega1' );
+  var omega2 = getVariable( id, 'omega2' );
+  var combine = getVariable( id, 'combine' );
+
+  function sine1( x ) { return Math.sin( omega1 * x ); }
+
+  function sine2( x ) { return Math.sin( omega2 * x ); }
+
+  var data = [];
+
+  if ( combine === true ) {
+    var p = plot( x => sine1(x) + sine2(x), [0, 2*Math.PI], { color: 'purple' } );
+    data = [ p ];
+  } else {
+    var p1 = plot( x => sine1(x), [0, 2*Math.PI] );
+    var p2 = plot( x => sine2(x), [0, 2*Math.PI], { color: 'red' } );
+    data = [ p1, p2 ];
+  }
+
+  var config = { type: 'svg' };
+
+  evaluate( id, data, config );
+
+}
+
+parent.update( id );
+
+</script>
+</div>
+
+<p>Complete code for this example:</p>
+
+<pre id="codeDisplay"></pre>
+
+<script> getCompleteCode(); </script>
+
+<p><a href="../examples.html">Examples Page</a></p>
+
+</body>
+</html>

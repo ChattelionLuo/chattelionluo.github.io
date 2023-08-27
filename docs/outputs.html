@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>MathCell - Outputs</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style> td { text-align: center } </style>
+</head>
+
+<body>
+
+<p>There are four kinds of output: <code>svg</code>, <code>threejs</code>, <code>matrix</code> and <code>text</code>. An experimental <code>x3d</code> output is also available. The <code>config</code> dictionary in the <code>update</code> function should have its <code>type</code> set equal to one of these string values.</p>
+
+<p>Multiple outputs are available by including a configuration dictionary containing a <code>multipleOutputs</code> entry as the third argument of the <code>MathCell()</code> command. The value for this key is then an array of arbitrary numerical values indicating the layout of the outputs. The data for the <code>evaluate()</code> function should then be an array of the usual data arrays. The configuration supplied to this function can either be a single dictionary for identical formatting of all outputs or an array of individual dictionaries.</p>
+
+<p>Unless otherwise specified input data is an array of arrays of data points, <i>i.e.</i> a three-dimensional array. Both two- and three-dimensional outputs automatically omit nonnumerical data points. This allows the graphic to appear at least in part, but be aware that this occurs.</p>
+
+<p>Colors are specified using standard HTML color code strings.</p>
+
+<br/><p>An <code>svg</code> output displays a two-dimensional plot of the input data with the options and default values</p>
+
+<table style="width: 4in; margin-left: 1in"><tr><td>
+<code>xMin</code></td><td>calculated
+</td></tr><tr><td>
+  <code>xMax</code></td><td>calculated
+</td></tr><tr><td>
+  <code>yMin</code></td><td>calculated
+</td></tr><tr><td>
+  <code>yMax</code></td><td>calculated
+</td></tr><tr><td>
+  <code>axes</code></td><td><code>true</code>
+</td></tr><tr><td>
+  <code>axesColor</code><td>black
+</td></tr><tr><td>
+  <code>axesLabels</code><td>none
+</td></tr><tr><td>
+  <code>backgroundColor</code><td>white
+</td></tr><tr><td>
+  <code>equalAspect</code></td><td><code>false</code>
+</td></tr><tr><td>
+  <code>equalLimits</code></td><td><code>false</code>
+</td></tr><tr><td>
+  <code>includeOrigin</code></td><td><code>false</code>
+</td></tr><tr><td>
+  <code>includeVerticals</code></td><td><code>false</code>
+</td></tr><tr><td>
+  <code>ticks</code></td><td>automatic
+</td></tr></table>
+
+<p><code>axesLabels</code> is an array of two strings. <code>ticks</code> can be set to an array with two numbers determining distances between ticks, a value of 'auto' for either axis in this array or simply the string 'auto', as well as 'none' or <code>false</code> to disable ticks.</p>
+
+<br/><p>A <code>threejs</code> output displays a three-dimensional plot of the input data with the options and default values</p>
+
+<table style="width: 3in; margin-left: 1.75in"><tr><td>
+<code>xMin</code></td><td>calculated
+</td></tr><tr><td>
+  <code>xMax</code></td><td>calculated
+</td></tr><tr><td>
+  <code>yMin</code></td><td>calculated
+</td></tr><tr><td>
+  <code>yMax</code></td><td>calculated
+</td></tr><tr><td>
+  <code>zMin</code></td><td>calculated
+</td></tr><tr><td>
+  <code>zMax</code></td><td>calculated
+</td></tr><tr><td>
+  <code>animate</code></td><td><code>false</code>
+</td></tr><tr><td>
+  <code>animateOnInteraction</code></td><td><code>false</code>
+</td></tr><tr><td>
+  <code>aspectRatio</code></td><td>[1,1,1]
+</td></tr><tr><td>
+  <code>axes</code></td><td><code>false</code>
+</td></tr><tr><td>
+  <code>axesLabels</code></td><td>['x','y','z']
+</td></tr><tr><td>
+  <code>cameraFar</code></td><td>1000
+</td></tr><tr><td>
+  <code>cameraNear</code></td><td>.1
+</td></tr><tr><td>
+  <code>clearColor</code></td><td>white
+</td></tr><tr><td>
+  <code>clippingPlane</code></td><td>none
+</td></tr><tr><td>
+  <code>decimals</code></td><td>2
+</td></tr><tr><td>
+  <code>equalAspect</code></td><td><code>false</code>
+</td></tr><tr><td>
+  <code>frame</code></td><td><code>true</code>
+</td></tr><tr><td>
+  <code>viewpoint</code></td><td>automatic
+</td></tr></table>
+
+<p><code>axesLabels</code> can be disabled independent of <code>frame</code> with a setting of <code>false</code>. <code>clippingPlane</code> is a dictionary consisting of a three-dimensional normal <code>vector</code> and a <code>distance</code> from the origin. <code>viewpoint</code> is a vector with respect to the center of the visible scene, not absolute world coordinates; the current viewpoint is automatically preserved between renderings upon manipulation of inputs.</p>
+
+<p><code>lights</code> can be specified as an array of dictionaries with <code>type</code> either 'ambient' or 'directional'. Both can take an HTML <code>color</code> and float <code>intensity</code>. A directional light can also have a <code>position</code> as an array of three coordiantes, and <code>parent</code> object of either 'camera' or 'scene'.</p>
+
+<p>Additional options specific to individual objects:</p>
+
+<table style="width: 3.5in; margin-left: 1.5in"><tr><td>
+  <code>material</code></td><td>phong
+</td></tr><tr><td>
+  <code>renderOrder</code></td><td>0
+</td></tr><tr><td>
+  <code>singleSide</code></td><td><code>false</code>
+</td></tr></table>
+
+<p>Objects are drawn from numerically lowest <code>renderOrder</code> to highest.</p>
+
+<p><code>material</code> can take the additional values 'normal' or 'standard'. Individual materials have the additional options and default values</p>
+
+<table style="width: 3.5in; margin-left: 1.5in"><tr><td>
+  phong</td><td><code>shininess</code></td><td>20
+</td></tr><tr><td>&nbsp;
+</td></tr><tr><td>
+  standard</td><td><code>metalness</code></td><td>.5
+</td></tr><tr><td>
+  </td><td><code>roughness</code></td><td>.5
+</td></tr></table>
+
+<p>See the <a href="animations.html">animations</a> page for those two options, as well as how to include functions that are not part of standard JavaScript.</p>
+
+<br/><p>A <code>matrix</code> output displays the contents of a two-dimensional array in matrix form. You may need to adjust the width and height of the MathCell to show the entire array properly.</p>
+
+<br/><p>A <code>text</code> output displays the result of a calculation in raw form. The data for this output can be a number, a string or an array as desired. The output has one option and default</p>
+
+<table style="width: 3.5in; margin-left: 1.4in"><tr><td>
+<code>center</code></td><td><code>false</code>
+</td></tr></table>
+
+<br/><p>An <code>x3d</code> output displays a three-dimensional plot of the input data with the options and default values</p>
+
+<table style="width: 3in; margin-left: 1.75in"><tr><td>
+<code>xMin</code></td><td>calculated
+</td></tr><tr><td>
+  <code>xMax</code></td><td>calculated
+</td></tr><tr><td>
+  <code>yMin</code></td><td>calculated
+</td></tr><tr><td>
+  <code>yMax</code></td><td>calculated
+</td></tr><tr><td>
+  <code>zMin</code></td><td>calculated
+</td></tr><tr><td>
+  <code>zMax</code></td><td>calculated
+</td></tr><tr><td>
+  <code>frame</code></td><td><code>true</code>
+</td></tr><tr><td>
+  <code>saveAsXML</code></td><td><code>false</code>
+</td></tr><tr><td>
+  <code>viewer</code></td><td>x3dom
+</td></tr></table>
+
+<p>Setting <code>saveAsXML</code> to <code>true</code> triggers a download to file. Available viewers are <a href="https://github.com/x3dom/x3dom">x3dom</a> and <a href="https://github.com/create3000/x_ite">x_ite</a>, but <code>threejs</code> is a superior choice at this time. This output looks forward to future three-dimensional rendering standards.</p>
+
+</body>
+</html>

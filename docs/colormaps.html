@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>MathCell - Colormaps</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+
+button { width: 2in }
+
+.right { text-align: right }
+
+</style>
+</head>
+
+<body>
+
+<p>Colormaps can be applied by setting an option of <code>colormap</code> equal to a string name below. A reversed colormap can be used by also setting an option of <code>reverseColormap</code> to <code>true</code>.</p>
+
+<p style="text-align: center">
+<button onclick="update()">Natural Order</button>
+<button onclick="update(true)">Alphabetical</button>
+</p><br/>
+
+<table id="bars"></table>
+
+<script src="../build/mathcell.js"></script>
+
+<script>
+
+update();
+
+function update( sorted=false ) {
+
+  bars.innerHTML = '';
+
+  // document not fully ready if use one loop...
+
+  if ( sorted ) {
+
+    var alpha = {};
+
+    Object.keys( colormaps ).sort().forEach( k => alpha[k] = colormaps[k] );
+
+    Object.keys( alpha ).forEach( cm => addRow(cm) );
+
+    Object.keys( alpha ).forEach( cm => addCanvas(cm) );
+
+  } else {
+
+    Object.keys( matplotlib ).forEach( cm => addRow(cm) );
+
+    bars.innerHTML += `
+<tr><td>&nbsp;</td></tr>`
+
+    Object.keys( mathematica ).forEach( cm => addRow(cm) );
+
+    Object.keys( colormaps ).forEach( cm => addCanvas(cm) );
+
+  }
+
+}
+
+function addRow( cm ) {
+
+  bars.innerHTML += `
+<tr><td class="right">${cm}</td><td id="${cm}"></td></tr>
+<tr><td>&nbsp;</td></tr>`;
+
+}
+
+function addCanvas( cm ) {
+
+  var canvas = document.createElement( 'canvas' );
+  canvas.width = 500;
+  canvas.height = 20;
+
+  var context = canvas.getContext( '2d' );
+  var gradient = context.createLinearGradient( 0, 0, 500, 0 );
+
+  var f = colormap( cm );
+
+  for ( var i = 0 ; i <= 1 ; i += .05 ) {
+    var c = f(i);
+    gradient.addColorStop( i, `rgb(${255*c.r},${255*c.g},${255*c.b})` );
+  }
+
+  context.fillStyle = gradient;
+  context.fillRect( 0, 0, 500, 20 );
+
+  document.getElementById( cm ).appendChild( canvas );
+
+}
+
+</script>
+
+</body>
+</html>
