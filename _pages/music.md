@@ -5,69 +5,19 @@ author_profile: true
 redirect_from: 
   - /music
 ---
+When not doing maths, I am a semi-professional violinist. I learnt from Mr. Xingyan Chen from the Sichuan Conservatory of Music. I played at the Asian Chamber Orchestra under the baton of Mr. Chan Man Tat and Nanyang Technological University Symphony Orchestra. I am a genuine classical music fan and playing in local/university orchestras, chamber groups and studios. Please contact me if interested in collaboration.
 
-Positions
-======
+
+## Positions
+
 * First violinist, Asian Chamber Orchestra (ACO), Hong Kong, 2023-now
 * Guest violinist, Nanyang Technological University Symphony Orchestra (NTUSSO), Singapore, 2022.
-
-Awards & Scholarships
-======
-* The Baptist Convention of Hong Kong Outstanding Student Awards, Jul '23.
-* CMB Wing Lung Bank Scholarship, Apr '23.
-* Outstanding Academic Performance Scholarship, '20, '21, '22.
-* Hong Kong SAR Government Out Reach Award, May '22.
-* Mr. Wang Lu Yen Student Exchange Scholarship, Feb '22.
-* Prof Sunney Chan Summer Undergraduate Research Fellowship, Jun '21.
-
-## Locations of key files/directories
-
-* Basic config options: _config.yml
-* Top navigation bar config: _data/navigation.yml
-* Single pages: _pages/
-* Collections of pages are .md or .html files in:
-  * _publications/
-  * _portfolio/
-  * _posts/
-  * _teaching/
-  * _talks/
-* Footer: _includes/footer.html
-* Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
+* 
 
 {% for post in site.teaching reversed %}
   {% include archive-single.html %}
 {% endfor %}
 
-## Tips and hints
-
-* Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version Github built with Jekyll. 
-  * Green check: successful build
-  * Orange circle: building
-  * Red X: error
-  * No icon: not built
-
-## Resources
- * [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/)
-
-## Markdown guide
-
-### Header three
-
-#### Header four
-
-##### Header five
-
-###### Header six
-
-## Blockquotes
-
-Single line blockquote:
-
-> Quotes are cool.
-
-## Tables
 
 ### Table 1
 
