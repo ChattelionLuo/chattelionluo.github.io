@@ -18,8 +18,8 @@ main:
   - title: "Posts"
     url: /posts/
 
-#  - title: "La musique"
-#    url: /portfolio/
+  - title: "La musique"
+    url: /portfolio/
     
 #  - title: "Guide"
 #    url: /markdown/
