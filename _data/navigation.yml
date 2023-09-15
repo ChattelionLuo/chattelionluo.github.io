@@ -17,6 +17,9 @@ main:
 
   - title: "Posts"
     url: /posts/
+
+#  - title: "La musique"
+#    url: /music/
     
 #  - title: "Guide"
 #    url: /markdown/
