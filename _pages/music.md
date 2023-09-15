@@ -3,7 +3,7 @@ permalink: /music/
 title: "La Musique"
 author_profile: true
 redirect_from: 
-  - /music.html
+  - /music
 ---
 
 ## Locations of key files/directories
