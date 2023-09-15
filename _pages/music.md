@@ -6,6 +6,20 @@ redirect_from:
   - /music
 ---
 
+Positions
+======
+* First violinist, Asian Chamber Orchestra (ACO), Hong Kong, 2023-now
+* Guest violinist, Nanyang Technological University Symphony Orchestra (NTUSSO), Singapore, 2022.
+
+Awards & Scholarships
+======
+* The Baptist Convention of Hong Kong Outstanding Student Awards, Jul '23.
+* CMB Wing Lung Bank Scholarship, Apr '23.
+* Outstanding Academic Performance Scholarship, '20, '21, '22.
+* Hong Kong SAR Government Out Reach Award, May '22.
+* Mr. Wang Lu Yen Student Exchange Scholarship, Feb '22.
+* Prof Sunney Chan Summer Undergraduate Research Fellowship, Jun '21.
+
 ## Locations of key files/directories
 
 * Basic config options: _config.yml
