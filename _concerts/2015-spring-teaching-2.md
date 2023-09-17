@@ -1,8 +1,8 @@
 ---
-title: "I am not teaching, would you teach me?"
-collection: teaching
+title: "Want concerts?"
+collection: concerts
 type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
+permalink: /concerts/concert1
 venue: "University 1, Department"
 date: 2015-01-01
 location: "City, Country"
