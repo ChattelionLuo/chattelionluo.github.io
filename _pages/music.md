@@ -18,6 +18,6 @@ When not doing maths, I am a semi-professional violinist. I learned from Mr. Xin
 ## Events
 {% include base_path %}
 
-{% for post in site.publications reversed %}
+{% for post in site.music reversed %}
   {% include archive-single.html %}
 {% endfor %}
