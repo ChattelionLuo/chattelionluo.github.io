@@ -1,7 +1,6 @@
 ---
 title: "A concert?"
 collection: music
-type: "Workshop"
 permalink: /music/music1
 venue: "University 1, Department"
 date: 2015-01-01
