@@ -16,6 +16,6 @@ When not doing maths, I am a semi-professional violinist. I learned from Mr. Xin
 {% include image.html url="/images/violin.jpg" description="Me (in the back) playing at the Auditorium, Yuen Long Theatre in 2022" %}
 
 ## Events
-{% for post in site.concerts reversed %}
+{% for post in site.music reversed %}
   {% include archive-single.html %}
 {% endfor %}
