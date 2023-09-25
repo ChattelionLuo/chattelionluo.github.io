@@ -10,6 +10,7 @@ When not doing maths, I am a semi-professional violinist. I learned from Mr. Xin
 
 
 ## Positions
+* First violinist, [The Hong Kong Polytechnic University Orchestra](https://www.polyu.edu.hk/cpeo/polyu-orchestra/), Hong Kong, 2023-now
 * First violinist, [Asian Chamber Orchestra (ACO)](https://acohk.org/), Hong Kong, 2022-now
 * Guest violinist, [Nanyang Technological University Symphony Orchestra (NTUSSO)](https://ntusymphonyorchest.wixsite.com/website), Singapore, 2022.
 
