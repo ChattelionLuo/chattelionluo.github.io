@@ -23,3 +23,4 @@ Awards & Scholarships
 * Hong Kong SAR Government Out Reach Award, May '22.
 * Mr. Wang Lu Yen Student Exchange Scholarship, Feb '22.
 * Prof Sunney Chan Summer Undergraduate Research Fellowship, Jun '21.
+* Meritorious Winner, Mathematical Contest in Modeling (MCM)®, May '23
