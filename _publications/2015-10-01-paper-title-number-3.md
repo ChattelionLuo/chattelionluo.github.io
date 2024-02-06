@@ -1,15 +1,17 @@
 ---
-title: "I am a 菜狗, so no publication."
+title: "Online Inference in High-Dimensional Models"
 collection: publications
 permalink: /publication/2015-10-01-paper-title-number-3
 excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2015-10-01
-venue: 'Journal 1'
+date: 2023-12-25
+venue: 'to submit'
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+citation: 'Han, R., Luo, L., Luo, Y., Lin, Y., & Huang, J. (2023). Online Inference in
+High-dimensional Models. To submit.'
 ---
-This paper is about the number 3. The number 4 is left for future work.
+Online statistical inference refers to an inferential method where, as data sequentially becomes available, it’s employed to update the model’s parameters at every step. This approach has broad applications in fields such as network security, quantitative finance, and recommendation systems, among others. In contrast to offline techniques where the entire dataset is used for training, online learning algorithms are anticipated to offer computational efficiency while still delivering statistical results that are comparable to their offline counterparts.
 
-[Download paper here](http://academicpages.github.io/files/paper3.pdf)
+[Download poster here](http://academicpages.github.io/files/Highdimensional_Poster.pdf)
 
-Recommended citation: Your Name, You. (2015). "Paper Title Number 3." <i>Journal 1</i>. 1(3).
+Recommended citation: Han, R., Luo, L., Luo, Y., Lin, Y., & Huang, J. (2023). Online Inference in
+High-dimensional Models. To submit.
