@@ -6,7 +6,7 @@ redirect_from:
   - /music
 ---
 When not doing maths, I am a semi-professional violinist. I learned from Mr. Xingyan Chen from [Sichuan Conservatory of Music](http://www.sccm.cn
-). Currently, I am playing at the PolyU Orchestra under the baton of [Mr. Leung Kin-fung](http://www.leungkinfung.com/bio.php), and the ASO under the baton of [Mr. Chan Man Tat](https://acohk.org/#Conductor). I am a genuine classical music fan and playing in local/university orchestras, chamber groups and studios. Please contact me if interested in collaborating.
+). Currently, I am playing at the PolyU Orchestra under the baton of [Mr. Leung Kin-fung](http://www.leungkinfung.com/bio.php), and the ASO under the baton of [Mr. Chan Man Tat](https://acohk.org/#Conductor). I am a genuine classical music fan and playing in local/university orchestras, chamber groups and studios. Fell free to drop me a message.
 
 
 ## Positions
