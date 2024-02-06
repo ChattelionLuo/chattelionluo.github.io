@@ -5,7 +5,7 @@ permalink: /publication/2015-10-01-paper-title-number-3
 excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
 date: 2023-12-25
 venue: 'to submit'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
+paperurl: ''
 citation: 'Han, R., Luo, L., Luo, Y., Lin, Y., & Huang, J. (2023). Online Inference in
 High-dimensional Models. To submit.'
 ---
