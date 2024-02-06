@@ -25,4 +25,5 @@ Awards & Scholarships
 * Mr. Wang Lu Yen Student Exchange Scholarship, Feb '22.
 * Prof Sunney Chan Summer Undergraduate Research Fellowship, Jun '21.
 * Meritorious Winner, Mathematical Contest in Modeling (MCM)®, May '23
+
 & others not listed
