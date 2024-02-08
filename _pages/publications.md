@@ -6,7 +6,7 @@ author_profile: true
 ---
 Our Research Group
 ======
-(Research Centre for the Mathematical Foundations of Generative AI (CMFAI))[https://www.polyu.edu.hk/ama/cmfai/]
+[Research Centre for the Mathematical Foundations of Generative AI (CMFAI)](https://www.polyu.edu.hk/ama/cmfai/)
 
 Publications
 ======
