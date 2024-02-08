@@ -4,11 +4,11 @@ title: ""
 permalink: /publications/
 author_profile: true
 ---
-Our Research Group
-======
+
+## Our Research Group
 [Research Centre for the Mathematical Foundations of Generative AI (CMFAI)](https://www.polyu.edu.hk/ama/cmfai/)
 
-Publications
+## Publications
 ======
 
 {% if author.googlescholar %}
