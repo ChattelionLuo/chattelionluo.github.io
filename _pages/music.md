@@ -6,13 +6,7 @@ redirect_from:
   - /music
 ---
 When not doing maths, I am a semi-professional violinist. I learned from Mr. Xingyan Chen from [Sichuan Conservatory of Music](http://www.sccm.cn
-). Currently, I am playing at the PolyU Orchestra under the baton of [Mr. Leung Kin-fung](http://www.leungkinfung.com/bio.php), and the ASO under the baton of [Mr. Chan Man Tat](https://acohk.org/#Conductor). I am a genuine classical music fan and playing in local/university orchestras, chamber groups and studios. Fell free to drop me a message.
-
-
-## Positions
-* First violinist, [The Hong Kong Polytechnic University Orchestra](https://www.polyu.edu.hk/cpeo/polyu-orchestra/), Hong Kong, 2023-now
-* First violinist, [Asian Chamber Orchestra (ACO)](https://acohk.org/), Hong Kong, 2022-now
-* Guest violinist, [Nanyang Technological University Symphony Orchestra (NTUSSO)](https://ntusymphonyorchest.wixsite.com/website), Singapore, 2022.
+). Currently, I am playing at the PolyU Orchestra under the baton of [Mr. Leung Kin-fung](http://www.leungkinfung.com/bio.php), and the ASO under the baton of [Mr. Chan Man Tat](https://acohk.org/#Conductor). I am a genuine classical music fan and playing in local/university orchestras, chamber groups and studios. You can find some of my playings on stream. Feel free to drop me a message.
 
 {% include image.html url="/images/violin.jpg" description="Me (in the back) playing at the Auditorium, Yuen Long Theatre in 2022" %}
 
