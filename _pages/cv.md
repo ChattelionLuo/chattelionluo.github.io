@@ -17,6 +17,7 @@ Education
 
 Awards & Scholarships
 ======
+* Best Paper Merit, PolyU PRSC '24
 * The Scholastic Award (ranked 1st in department), HKBU
 * Outstanding Student Award (ranked 1st in faculty), HKBU
 * CMB Wing Lung Bank Scholarship, Apr '23.
