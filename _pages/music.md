@@ -16,11 +16,11 @@ Studio Ghibli Medley with [Nanyang Technological University Symphony Orchestra](
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JQ6ZSCj5yck?si=StWFhmPTSY6edrFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ## Events
 
-{% include image.html url="/images/Tsinghua2024.png.jpg" description="This is my cat." %}
+{% include image.html url="/images/Tsinghua2024.png" description="Mozart: The Requiem in D minor, K626, conducted by Alex Tam" %}
 
-{% include image.html url="/images/AIR2024.jpg" description="This is my cat." %}
+{% include image.html url="/images/AIR2024.png" description="Music Exchange Programme between Tsinghua University \& The Hong Kong Polytechnic University" %}
 
-{% include image.html url="/images/Tue.jpg" description="This is my cat." %}
+{% include image.html url="/images/Tue.png" description="Saxophonist Timothy Sun \& Harmonicist Gordon Lee with PolyU Orchestra" %}
 
 {% include base_path %}
 
