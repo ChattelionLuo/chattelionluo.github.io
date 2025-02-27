@@ -18,9 +18,9 @@ Studio Ghibli Medley with [Nanyang Technological University Symphony Orchestra](
 
 {% include image.html url="/images/Tsinghua2024.png" description="Mozart: The Requiem in D minor, K626, conducted by Alex Tam" %}
 
-{% include image.html url="/images/AIR2024.png" description="Music Exchange Programme between Tsinghua University \& The Hong Kong Polytechnic University" %}
+{% include image.html url="/images/AIR2024.png" description="Music Exchange Programme between Tsinghua University & The Hong Kong Polytechnic University" %}
 
-{% include image.html url="/images/Tue.png" description="Saxophonist Timothy Sun \& Harmonicist Gordon Lee with PolyU Orchestra" %}
+{% include image.html url="/images/Tue.png" description="Saxophonist Timothy Sun & Harmonicist Gordon Lee with PolyU Orchestra" %}
 
 {% include base_path %}
 
