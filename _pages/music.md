@@ -15,6 +15,13 @@ Mendelssohn: Octet in E-flat major, Op. 20, with [Tsinghua University Symphony O
 Studio Ghibli Medley with [Nanyang Technological University Symphony Orchestra](https://www.instagram.com/ntusymphonyorchestra?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==) (NTUSO).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JQ6ZSCj5yck?si=StWFhmPTSY6edrFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ## Events
+
+{% include image.html url="/images/Tsinghua2024.png.jpg" description="This is my cat." %}
+
+{% include image.html url="/images/AIR2024.jpg" description="This is my cat." %}
+
+{% include image.html url="/images/Tue.jpg" description="This is my cat." %}
+
 {% include base_path %}
 
 {% for post in site.music reversed %}
