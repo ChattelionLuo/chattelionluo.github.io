@@ -16,5 +16,6 @@ Our Research Group
 
 {% include image.html url="/images/cat.jpg" description="This is my cat." %}
 
-
+<div style="text-align: center;">
 <a href="https://info.flagcounter.com/ebsb"><img src="https://s01.flagcounter.com/map/ebsb/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0"></a>
+</div>
