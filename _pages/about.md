@@ -19,4 +19,4 @@ Our Research Group
 A data-driven personal website
 ======
 $$P(A \mid B)=\frac{P(B \mid A) P(A)}{P(B)}$$
-[<script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5h9dqj6p4l7&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33&amp;v0=100&amp;rx=50" async="async"></script>](https://chattelionluo.github.io/)
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=lWGOy_elvj7TjVGm57fffJYVJHzWq8PR-yUjRZF4GLY"></script>
