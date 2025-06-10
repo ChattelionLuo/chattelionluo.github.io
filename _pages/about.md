@@ -19,4 +19,4 @@ Our Research Group
 A data-driven personal website
 ======
 $$P(A \mid B)=\frac{P(B \mid A) P(A)}{P(B)}$$
-<script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=m2Z4ZrEpmzYXdmL5Is0CtxJr3iePWsKopg9Mb6YvSkU"></script>
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=lWGOy_elvj7TjVGm57fffJYVJHzWq8PR-yUjRZF4GLY&cl=ffffff&w=a"></script>
