@@ -16,9 +16,7 @@ Our Research Group
 
 {% include image.html url="/images/cat.jpg" description="This is my cat." %}
 
-A data-driven personal website
-======
-$$P(A \mid B)=\frac{P(B \mid A) P(A)}{P(B)}$$
+
 <div style="text-align: center; margin: 30px 0;">
     <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=lWGOy_elvj7TjVGm57fffJYVJHzWq8PR-yUjRZF4GLY&cl=ffffff&w=200"></script>
 </div>
