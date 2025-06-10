@@ -17,6 +17,6 @@ Our Research Group
 {% include image.html url="/images/cat.jpg" description="This is my cat." %}
 
 
-<div style="text-align: center; margin: 30px 0;">
+<div style="text-align: center; margin: 50px 0;">
     <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=lWGOy_elvj7TjVGm57fffJYVJHzWq8PR-yUjRZF4GLY&cl=ffffff&w=200"></script>
 </div>
