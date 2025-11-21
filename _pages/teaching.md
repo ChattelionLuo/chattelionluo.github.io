@@ -11,3 +11,4 @@ redirect_from:
 Teaching
 =====
 * AMA2233 Data Analytics and Visualizations, Fall 2024, PolyU
+* DSAI5101 Statistical Data Mining, Fall 2025, PolyU
