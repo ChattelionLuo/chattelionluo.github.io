@@ -33,20 +33,6 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-
-    {%- comment -%} Thumbnail under title (optional, shown if 'thumbnail' is set) {%- endcomment -%}
-    {% if post.thumbnail %}
-      <div class="archive__thumb" style="margin: 0.5rem 0 1rem;">
-        <img src="{{ post.thumbnail | relative_url }}"
-             alt="{{ post.thumb_alt | default: post.title }}"
-             style="max-width: 100%; height: auto; border-radius: 6px;">
-        {% if post.thumb_caption %}
-          <div class="archive__thumb-caption" style="font-size: 0.9rem; color: #666; margin-top: 0.25rem;">
-            {{ post.thumb_caption }}
-          </div>
-        {% endif %}
-      </div>
-    {% endif %}
     
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
@@ -66,6 +52,20 @@
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    {% endif %}
+
+    {%- comment -%} Thumbnail under title (optional, shown if 'thumbnail' is set) {%- endcomment -%}
+    {% if post.thumbnail %}
+      <div class="archive__thumb" style="margin: 0.5rem 0 1rem;">
+        <img src="{{ post.thumbnail | relative_url }}"
+             alt="{{ post.thumb_alt | default: post.title }}"
+             style="max-width: 100%; height: auto; border-radius: 6px;">
+        {% if post.thumb_caption %}
+          <div class="archive__thumb-caption" style="font-size: 0.9rem; color: #666; margin-top: 0.25rem;">
+            {{ post.thumb_caption }}
+          </div>
+        {% endif %}
+      </div>
     {% endif %}
     
     {% if post.citation and post.paperurl %}
