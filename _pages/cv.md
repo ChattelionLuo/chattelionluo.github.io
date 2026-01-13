@@ -34,6 +34,6 @@ Invited Talks
 ======
 * [Joint Meetings of 2025 Taipei International Statistical Symposium and 13th ICSA International Conference](https://www3.stat.sinica.edu.tw/joint2025/index.html), Taipei, Dec '25
 * [The 8th International Conference on Econometrics and Statistics (EcoSta 2025)](https://www.cmstatistics.org/EcoSta2025/). Tokyo, Japan, Aug '25
-* [A plenary talk "Statistical Inference in High-dimensional Data",CITIC Securities](https://www.cmstatistics.org/EcoSta2025/). Shenzhen, China, Jun '25
+* [A plenary talk "Statistical Inference in High-dimensional Data", CITIC Securities](). Shenzhen, China, Jun '25
 * [Workshop on Mathematical Foundations in Artificial Intelligence](http://tianyuan.amss.ac.cn/), Kunming, China,  Oct '24
 * [Best Paper Session, PolyU Research Student Conference 2024](https://events.polyu.edu.hk/prsc2024/home), Hong Kong, Aug '24
