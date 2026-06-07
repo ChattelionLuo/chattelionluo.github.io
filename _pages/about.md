@@ -20,7 +20,7 @@ For fun
 ======
 Talk is cheap; show the algo — [enter the GLM Algorithm Arena →](https://ChattelionLuo.github.io/regression-zoo/)
 
-
+Statistical ranking made easy
 <a href="https://ChattelionLuo.github.io/regression-zoo/">
   <img src="/images/tennis_sparse_graph_visualization_clean.png" alt="Statistical ranking made easy">
 </a>
