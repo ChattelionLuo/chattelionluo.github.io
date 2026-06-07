@@ -21,8 +21,9 @@ For fun
 Talk is cheap; show the algo — [enter the GLM Algorithm Arena →](https://ChattelionLuo.github.io/regression-zoo/)
 
 
-Statistical ranking made easy
-{% include image.html url="/images/tennis_sparse_graph_visualization_clean.png" link="https://ChattelionLuo.github.io/" %}
+<a href="https://ChattelionLuo.github.io/regression-zoo/">
+  <img src="/images/tennis_sparse_graph_visualization_clean.png" alt="Statistical ranking made easy">
+</a>
 
 <div style="text-align: center;">
 <a href="https://info.flagcounter.com/ebsb"><img src="https://s01.flagcounter.com/map/ebsb/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0"></a>
