@@ -18,13 +18,17 @@ Our Research Group
 
 Sneak Peek
 ======
+
 [Linear Model Arena](https://ChattelionLuo.github.io/regression-zoo/)
+
 <a href="https://ChattelionLuo.github.io/regression-zoo/">
-  <img src="/images/arenademo.png" alt="Linear Model Arena">
+  <img src="/images/arenademo.png" description="Linear Model Arena">
 </a>
+
 [Statistical Ranking Made Easy](https://ChattelionLuo.github.io/regression-zoo/)
+
 <a href="https://ChattelionLuo.github.io/regression-zoo/">
-  <img src="/images/tennis_sparse_graph_visualization_clean.png" alt="Statistical Ranking Made Easy">
+  <img src="/images/tennis_sparse_graph_visualization_clean.png" description="Statistical Ranking Made Easy">
 </a>
 
 <div style="text-align: center;">
