@@ -16,13 +16,15 @@ Our Research Group
 
 {% include image.html url="/images/cat.jpg" description="This is my cat." %}
 
-For fun
+Sneak Peek
 ======
-Talk is cheap; show the algo — [Linear Model Arena](https://ChattelionLuo.github.io/regression-zoo/)
-
-Statistical ranking made easy
+[Linear Model Arena](https://ChattelionLuo.github.io/regression-zoo/)
 <a href="https://ChattelionLuo.github.io/regression-zoo/">
-  <img src="/images/tennis_sparse_graph_visualization_clean.png" alt="Statistical ranking made easy">
+  <img src="/images/arenademo.png" alt="Linear Model Arena">
+</a>
+[Statistical Ranking Made Easy](https://ChattelionLuo.github.io/regression-zoo/)
+<a href="https://ChattelionLuo.github.io/regression-zoo/">
+  <img src="/images/tennis_sparse_graph_visualization_clean.png" alt="Statistical Ranking Made Easy">
 </a>
 
 <div style="text-align: center;">
