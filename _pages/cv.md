@@ -32,6 +32,9 @@ Awards & Scholarships
 
 Invited Talks
 ======
+* [The 9th International Conference on Econometrics and Statistics (EcoSta 2026)](https://www.cmstatistics.org/EcoSta2026/). Kyoto, Japan, Aug '26
+* [Departmental Seminar "Statistical Estimation and Inference in High-dimensional and Semiparametric Models", University of Hong Kong](https://saasweb.hku.hk/event?category=seminars&year=all). Hong Kong, Aug '26
+* [International Symposium on Nonparametric Statistics (ISNPS 2026)](https://easyconferences.eu/isnps2026/), Thessaloniki, Greece, Jun '26
 * [Joint Meetings of 2025 Taipei International Statistical Symposium and 13th ICSA International Conference](https://www3.stat.sinica.edu.tw/joint2025/index.html), Taipei, Dec '25
 * [The 8th International Conference on Econometrics and Statistics (EcoSta 2025)](https://www.cmstatistics.org/EcoSta2025/). Tokyo, Japan, Aug '25
 * [A plenary talk "Statistical Inference in High-dimensional Data", CITIC Securities](). Shenzhen, China, Jun '25
